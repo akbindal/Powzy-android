@@ -213,15 +213,6 @@
                                     android:textColor="#ffffff"
                                     android:textSize="25sp" />
                             </LinearLayout>
-                            <ImageButton
-                                android:id="@+id/first_discover"
-                                android:layout_width="56dp"
-                                android:layout_height="57dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="60dp"
-                                android:background="#00000000"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/first_discover" />
                             
 
                         </FrameLayout>
@@ -230,7 +221,7 @@
 
                     <LinearLayout
                         android:id="@+id/home_mission"
-                    	android:layout_width="match_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:visibility="visible" >
@@ -251,16 +242,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" >
 
-                            <ImageButton
-                                android:id="@+id/ImageButton01"
-                                android:layout_width="56dp"
-                                android:layout_height="57dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="60dp"
-                                android:background="#00000000"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/first_discover" />
-
                             <ScrollView
                                 android:id="@+id/scrollView1"
                                 android:layout_width="match_parent"
@@ -273,104 +254,709 @@
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal" 
-                                        android:weightSum="1">
-                                        <!--Level,poet's path,company logo -->
-
-                                        <RelativeLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="0.15" >
-
-                                            <ImageView
-                                                android:id="@+id/imageView4"
-                                                android:layout_width="55dp"
-                                                android:layout_height="55dp"
-                                                android:layout_centerHorizontal="true"
-                                                android:layout_centerVertical="true"
-                                                android:src="@drawable/mission_level" />
-
-                                            <com.powzyapp.powzy.util.PowzyTextView
-                                                android:id="@+id/textView5"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_centerHorizontal="true"
-                                                android:layout_centerVertical="true"
-                                                android:text="4"
-                                                android:textColor="@android:color/white"
-                                                android:textSize="17sp"
-                                                foo:cheesyfont="Arista.ttf" />
-
-                                        </RelativeLayout>
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical" >
 
                                         <LinearLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical" 
-                                            android:layout_weight="0.75"
-                                            android:layout_marginLeft="5dp" >
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1" >
 
-                                            <com.powzyapp.powzy.util.PowzyTextView
-                                                android:id="@+id/textView6"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="5dp"
-                                                android:text="Poet&apos;s path"
-                                                android:textColor="@android:color/black"
-                                                android:textSize="21sp"
-                                                foo:cheesyfont="Arista.ttf" />
                                             <RelativeLayout
-                                                 android:layout_width="wrap_content"
-                                            	android:layout_height="match_parent">
-                                            	
-                                            	<ProgressBar
-	                                                android:id="@+id/progressBar1"
-	                                                style="?android:attr/progressBarStyleHorizontal"
-	                                                android:layout_width="match_parent"
-	                                                android:layout_height="wrap_content"
-	                                                android:indeterminate="false" 
-	                                                android:progress="50"
-	                                                android:progressDrawable="@drawable/greenprogress"/>
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.15" >
 
-	                                            <com.powzyapp.powzy.util.PowzyTextView
-	                                                android:id="@+id/textView7"
-	                                                android:layout_width="wrap_content"
-	                                                android:layout_height="wrap_content"
-	                                                android:layout_alignParentRight="true"
-	                                                android:layout_alignParentTop="true"
-	                                                android:text="50%"
-	                                                android:textColor="@android:color/white"
-	                                                android:textSize="20sp"
-	                                                foo:cheesyfont="Arista.ttf" />
+                                                <ImageView
+                                                    android:id="@+id/ImageView08"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="55dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/mission_level" />
 
+                                                <com.powzyapp.powzy.util.PowzyTextView
+                                                    android:id="@+id/PowzyTextView03"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="4"
+                                                    android:textColor="@android:color/white"
+                                                    android:textSize="22sp"
+                                                    foo:cheesyfont="Arista.ttf" />
                                             </RelativeLayout>
 
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_weight="0.75"
+                                                android:orientation="vertical" >
+
+                                                <com.powzyapp.powzy.util.PowzyTextView
+                                                    android:id="@+id/PowzyTextView02"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:text="Poet&apos;s path"
+                                                    android:textColor="@android:color/black"
+                                                    android:textSize="21sp"
+                                                    foo:cheesyfont="Arista.ttf" />
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ProgressBar
+                                                        android:id="@+id/ProgressBar01"
+                                                        style="?android:attr/progressBarStyleHorizontal"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:indeterminate="false"
+                                                        android:progress="50"
+                                                        android:progressDrawable="@drawable/greenprogress" />
+
+                                                    <com.powzyapp.powzy.util.PowzyTextView
+                                                        android:id="@+id/PowzyTextView04"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_alignParentTop="true"
+                                                        android:text="50%"
+                                                        android:textColor="@android:color/white"
+                                                        android:textSize="17sp"
+                                                        foo:cheesyfont="Arista.ttf" />
+                                                </RelativeLayout>
+                                            </LinearLayout>
+
+                                            <ImageView
+                                                android:id="@+id/ImageView07"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+                                                android:layout_marginBottom="25dp"
+                                                android:layout_weight="0.1"
+                                                android:src="@drawable/logo_montreux" />
                                         </LinearLayout>
 
-                                        <ImageView
-                                            android:id="@+id/imageView5"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="30dp"
-                                            android:layout_marginBottom="25dp"
-                                            android:src="@drawable/logo_montreux" 
-                                            android:layout_weight="0.1" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical" >
 
-                                       
-                                        
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView05"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo_active" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView04"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Victor Hugo"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_favorite"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView04"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo_active" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView05"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Charlie Chaplin"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_profile"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView06"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView06"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Fyodor Dostoyevsky"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="16sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_reward"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView04"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView05"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Freddie Mercury"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="16sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_profile"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+                                        </LinearLayout>
                                     </LinearLayout>
 
-                                    <TextView
-                                        android:id="@+id/textView3"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Current missions" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical" >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1" >
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.15" >
+
+                                                <ImageView
+                                                    android:id="@+id/imageView4"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="55dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:src="@drawable/mission_level" />
+
+                                                <com.powzyapp.powzy.util.PowzyTextView
+                                                    android:id="@+id/textView5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:text="4"
+                                                    android:textColor="@android:color/white"
+                                                    android:textSize="22sp"
+                                                    foo:cheesyfont="Arista.ttf" />
+                                            </RelativeLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_weight="0.75"
+                                                android:orientation="vertical" >
+
+                                                <com.powzyapp.powzy.util.PowzyTextView
+                                                    android:id="@+id/textView6"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:text="Poet&apos;s path"
+                                                    android:textColor="@android:color/black"
+                                                    android:textSize="21sp"
+                                                    foo:cheesyfont="Arista.ttf" />
+
+                                                <RelativeLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ProgressBar
+                                                        android:id="@+id/progressBar1"
+                                                        style="?android:attr/progressBarStyleHorizontal"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:indeterminate="false"
+                                                        android:progress="50"
+                                                        android:progressDrawable="@drawable/greenprogress" />
+
+                                                    <com.powzyapp.powzy.util.PowzyTextView
+                                                        android:id="@+id/textView7"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentRight="true"
+                                                        android:layout_alignParentTop="true"
+                                                        android:text="50%"
+                                                        android:textColor="@android:color/white"
+                                                        android:textSize="18sp"
+                                                        foo:cheesyfont="Arista.ttf" />
+                                                </RelativeLayout>
+                                            </LinearLayout>
+
+                                            <ImageView
+                                                android:id="@+id/imageView5"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="30dp"
+                                                android:layout_marginBottom="25dp"
+                                                android:layout_weight="0.1"
+                                                android:src="@drawable/logo_montreux" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical" >
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView02"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo_active" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView02"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Victor Hugo"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_brand"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView01"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo_active" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView01"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Charlie Chaplin"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_games"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView03"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView03"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Fyodor Dostoyevsky"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="16sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_home"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="#313949" >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent" >
+
+                                                    <ImageView
+                                                        android:id="@+id/ImageView01"
+                                                        android:layout_width="31dp"
+                                                        android:layout_height="30dp"
+                                                        android:layout_marginLeft="14dp"
+                                                        android:layout_marginTop="7dp"
+                                                        android:src="@drawable/todo" />
+
+                                                    <TextView
+                                                        android:id="@+id/TextView01"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center_vertical"
+                                                        android:layout_marginLeft="20dp"
+                                                        android:gravity="center_vertical"
+                                                        android:text="Visit Freddie Mercury"
+                                                        android:textColor="#ffffff"
+                                                        android:textSize="16sp" />
+                                                </LinearLayout>
+
+                                                <Button
+                                                    android:id="@+id/menu_games"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="44dp"
+                                                    android:background="#00000000" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1dp"
+                                                    android:background="#ffffff"
+                                                    android:orientation="vertical" >
+                                                </LinearLayout>
+                                            </FrameLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
                                 </LinearLayout>
                             </ScrollView>
 
                         </FrameLayout>
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/home_feed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <com.powzyapp.powzy.util.PowzyTextView
+                            android:id="@+id/PowzyTextView05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="Latest Feed"
+                            android:textColor="#000000"
+                            android:textSize="22sp"
+                            foo:cheesyfont="Arista.ttf" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ScrollView
+                                android:id="@+id/ScrollView01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical" >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical" >
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="27dp"
+                                            android:background="#313949"
+                                            android:orientation="horizontal" >
+
+                                            <TextView
+                                                android:id="@+id/TextView08"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="Montreux Riviera"
+                                                android:textColor="@android:color/white" />
+
+                                            <TextView
+                                                android:id="@+id/TextView09"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginRight="2dp"
+                                                android:text="Fri. 20.09 at 23:59"
+                                                android:textColor="@android:color/white" />
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@android:color/white"
+                                            android:orientation="vertical" >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="40dp"
+                                                android:layout_marginTop="15dp"
+                                                android:orientation="horizontal" >
+
+                                                <ImageView
+                                                    android:id="@+id/ImageView09"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="30dp"
+                                                    android:layout_marginBottom="25dp"
+                                                    android:layout_weight="1"
+                                                    android:src="@drawable/logo_montreux" />
+
+                                                <TextView
+                                                    android:id="@+id/TextView10"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="2"
+                                                    android:text="The fifth level of the &quot;Poet&apos;s path&quot;is now available. Enjoy it!"
+                                                    android:textColor="@android:color/black"
+                                                    android:textSize="13sp" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="7dp" >
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="27dp"
+                                            android:background="#313949"
+                                            android:orientation="horizontal" >
+
+                                            <TextView
+                                                android:id="@+id/textView3"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="Holy Cow"
+                                                android:textColor="@android:color/white" />
+
+                                            <TextView
+                                                android:id="@+id/textView8"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginRight="2dp"
+                                                android:text="Fri. 19.09 at 22:59"
+                                                android:textColor="@android:color/white" />
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@android:color/white"
+                                            android:orientation="vertical" >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="15dp"
+                                                android:orientation="horizontal" >
+
+                                                <ImageView
+                                                    android:id="@+id/ImageView17"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="30dp"
+                                                    android:layout_marginBottom="25dp"
+                                                    android:layout_weight="1"
+                                                    android:src="@drawable/logo_montreux" />
+
+                                                <TextView
+                                                    android:id="@+id/TextView07"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="2"
+                                                    android:text="The first 3 people completing level 6 of our game &quot;Big Burger&quot; will get a exclusive &quot;burger King&quot;session with our Chefs!."
+                                                    android:textColor="@android:color/black"
+                                                    android:textSize="13sp" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </ScrollView>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/first_discover"
+                        android:layout_width="56dp"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="80dp"
+                        android:background="#00000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/first_discover" />
 
                 </FrameLayout>
             </LinearLayout>

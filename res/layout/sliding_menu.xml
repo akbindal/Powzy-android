@@ -125,7 +125,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/Button02"
+                    android:id="@+id/menu_brand"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:background="#00000000" />
@@ -168,7 +168,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/Button01"
+                    android:id="@+id/menu_games"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:background="#00000000" />
@@ -211,7 +211,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/Button04"
+                    android:id="@+id/menu_reward"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:background="#00000000" />
@@ -254,7 +254,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/Button03"
+                    android:id="@+id/menu_home"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
                     android:background="#00000000" />

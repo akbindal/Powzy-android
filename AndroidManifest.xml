@@ -64,7 +64,12 @@
              android:screenOrientation="portrait"
 			 android:label="@string/app_name" 
              android:theme="@android:style/Theme.NoTitleBar" />  
-             
+       <activity 
+		     android:name=".Reward"
+		     android:screenOrientation="portrait"
+		     android:label="@string/app_name" 
+		     android:theme="@android:style/Theme.NoTitleBar" />  
+		     
       	<activity 
              android:name=".MapDescription"
              android:screenOrientation="portrait"

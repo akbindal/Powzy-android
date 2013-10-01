@@ -1,0 +1,354 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foo="http://schemas.android.com/apk/res/com.powzyapp.powzy"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#eaedf1"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/head" >
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="75dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="-20dp"
+            android:background="@drawable/more" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp" >
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_margin="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical" >
+
+        <com.powzyapp.powzy.util.PowzyTextView
+            android:id="@+id/first_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#313946"
+            android:gravity="center"
+            android:text="Simply fun"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            foo:cheesyfont="Arista.ttf" />
+
+        <HorizontalScrollView
+            android:id="@+id/first_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/ImageView01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sf_logo_durex"
+                            android:background="#000000"
+                            android:padding="1dp" 
+                            android:layout_marginLeft="3dp"/>
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Workout Challenge" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sf_logo_silhouette"
+                            android:layout_marginLeft="5dp"
+                            android:background="#000000"
+                            android:padding="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_feed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:background="#313949"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/TextView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:text="Valid until 1 Dec 2013"
+                                android:textColor="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/ImageView04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/mission_level" />
+
+                            <com.powzyapp.powzy.util.PowzyTextView
+                                android:id="@+id/PowzyTextView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/ImageView04"
+                                android:layout_alignParentBottom="true"
+                                android:text="1"
+                                android:textColor="@android:color/white"
+                                android:textSize="22sp"
+                                android:layout_marginLeft="8dp"
+                                foo:cheesyfont="Arista.ttf" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/ImageView05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:src="@drawable/logo_montreux" />
+
+                            <TextView
+                                android:id="@+id/TextView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="10% Discount on your healty meal"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:background="#313949"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/TextView09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:text="Valid until 31 January 2014"
+                                android:textColor="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/ImageView08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/mission_level" />
+
+                            <com.powzyapp.powzy.util.PowzyTextView
+                                android:id="@+id/PowzyTextView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/ImageView08"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="8dp"
+                                android:text="1"
+                                android:textColor="@android:color/white"
+                                android:textSize="22sp"
+                                foo:cheesyfont="Arista.ttf" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/TextView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:text="Free Zumba Class"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:id="@+id/ImageView09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.84"
+                                android:src="@drawable/logo_montreux" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:background="#313949"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dp"
+                                android:text="Valid until 1 Dec 2013"
+                                android:textColor="@android:color/white" />
+
+                            <ImageView
+                                android:id="@+id/ImageView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/mission_level" />
+
+                            <com.powzyapp.powzy.util.PowzyTextView
+                                android:id="@+id/PowzyTextView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/ImageView03"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="8dp"
+                                android:text="2"
+                                android:textColor="@android:color/white"
+                                android:textSize="22sp"
+                                foo:cheesyfont="Arista.ttf" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/ImageView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:src="@drawable/logo_montreux" />
+
+                            <TextView
+                                android:id="@+id/TextView07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="Invite a new member, and obtain 3 months for free!"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
