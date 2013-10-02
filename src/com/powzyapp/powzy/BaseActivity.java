@@ -54,6 +54,9 @@ public class BaseActivity extends Activity{
 		case R.id.menu_favorite:
 			break;
 		case R.id.menu_profile:
+			intent = new Intent(this, Profile.class);				
+			startActivity(intent);
+			finish();
 			break;
 		case R.id.menu_reward:
 			intent = new Intent(this, Reward.class);				

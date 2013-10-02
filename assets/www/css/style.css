@@ -1,0 +1,47 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; 	content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+body {width:320px; height:470px; background:#000;}
+
+#first {width:320px;height:470px;background:url('../images/back1x2.png') no-repeat; background-size:320px 404px;}
+#start {width:320px;height:470px;background:url('../images/back2x2.png') no-repeat; background-size:320px 404px;}
+#finish {width:320px;height:470px;background:url('../images/back3x2.png') no-repeat; background-size:320px 404px;}
+#stats {width:320px;height:470px;background:url('../images/back6x2.png') no-repeat; background-size:320px 404px;}
+#compare {width:320px;height:470px;background:url('../images/back5x2.png') no-repeat; background-size:320px 404px;}
+#compare1 {width:320px;height:470px;background:url('../images/back8x2.png') no-repeat; background-size:320px 404px;}
+.leftButton { position:absolute; margin:297px 0px 0px 0px; width:75px; height:75px; }
+.rightButton { position:absolute; margin:297px 0px 0px 245px; width:75px; height:75px; }
+.bottomButton { position:absolute; margin:329px 0px 0px 121px; width:75px; height:75px; }
+.topButton { position:absolute; margin:238px 0px 0px 121px; width:75px; height:75px; }
+
+
+.feed { position:absolute; margin:0px 0px 0px 160px; width:160px; height:44px;}
+.myStat { position:absolute; margin:0px 0px 0px 0px; width:160px; height:44px;  }
+
+
+#volume { background:#a70a85; position:absolute; margin:30px 0px 0px 15px; width:1px;  height:50px; z-index:-1;    }
+#movement { background:#a70a85; position:absolute; margin:135px 0px 0px 15px;  width:1px; height:50px; z-index:-1;  }
+
+#time { position:absolute; margin:265px 0px 0px 122px;  width:100px; height:50px; 
+		color:#fff; text-shadow: 0px 0px 18px #0000ff; font-size:30px; font-family:"Arial";
+
+ }
+
+#cvsBorder {margin:16px 20px 10px 20px; padding-top:18px; }
+
+.finishInput { color:#a2088a; margin:38px 10px 10px 150px; font-size:17px; font-family:"Arial"; }
+#duration {  }
+#movements {margin-top:40px;}
+#maxEnergy {margin-top:40px;}

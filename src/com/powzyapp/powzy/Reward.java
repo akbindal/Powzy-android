@@ -75,10 +75,10 @@ public class Reward extends BaseActivity{
 		String image;
 		if(categories[clickItem]){
 			categories[clickItem]=false;
-			image = "category"+clickItem+1+"_off";
+			image = "category"+(int)(clickItem+1)+"_off";
 		} else { 
 			categories[clickItem]=true;
-			image = "category"+(int)(clickItem+1)+"_off";
+			image = "category"+(int)(clickItem+1);
 		}
 
 		Context context = v.getContext();

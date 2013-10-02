@@ -39,7 +39,7 @@ public class MainActivity extends BaseActivity {
 		discover.setOnClickListener(new OnClickListener() {			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this, MapDescription.class);				
+				Intent i = new Intent(MainActivity.this, GymGame.class);				
 				startActivity(i);
 			}
 		});
